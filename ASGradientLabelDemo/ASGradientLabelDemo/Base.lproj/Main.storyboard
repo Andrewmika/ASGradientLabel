@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="渐变Label-从上到下" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyz-N5-Cam" customClass="ASGradientLabel">
+                                <rect key="frame" x="33" y="313" width="309.5" height="42"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="渐变Label-Attributed" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s08-76-hXI" customClass="ASGradientLabel">
+                                <rect key="frame" x="42" y="405" width="293" height="42"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="渐变Label-从左到右" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBb-Sf-Yna" customClass="ASGradientLabel">
+                                <rect key="frame" x="63" y="229.5" width="249" height="33.5"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kyz-N5-Cam" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4eZ-4x-9sf"/>
+                            <constraint firstItem="s08-76-hXI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JqL-u0-MIC"/>
+                            <constraint firstItem="kyz-N5-Cam" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RXd-Jr-pBY"/>
+                            <constraint firstItem="kyz-N5-Cam" firstAttribute="top" secondItem="WBb-Sf-Yna" secondAttribute="bottom" constant="50" id="XUc-ex-juq"/>
+                            <constraint firstItem="WBb-Sf-Yna" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="byV-t5-QzU"/>
+                            <constraint firstItem="s08-76-hXI" firstAttribute="top" secondItem="kyz-N5-Cam" secondAttribute="bottom" constant="50" id="fSn-hb-oD4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="attributedLabel" destination="s08-76-hXI" id="eui-p1-aa4"/>
+                        <outlet property="leftToRightLabel" destination="WBb-Sf-Yna" id="KiM-5W-0kX"/>
+                        <outlet property="upToDownLabel" destination="kyz-N5-Cam" id="aQy-2o-cOh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
