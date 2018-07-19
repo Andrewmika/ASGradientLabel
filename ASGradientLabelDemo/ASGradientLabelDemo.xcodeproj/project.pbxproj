@@ -13,7 +13,7 @@
 		64204EA91FE8EC9000CBCEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64204EA81FE8EC9000CBCEBB /* Assets.xcassets */; };
 		64204EAC1FE8EC9000CBCEBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64204EAA1FE8EC9000CBCEBB /* LaunchScreen.storyboard */; };
 		64204EAF1FE8EC9000CBCEBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64204EAE1FE8EC9000CBCEBB /* main.m */; };
-		64204EB81FE8ECC600CBCEBB /* ASGradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64204EB71FE8ECC600CBCEBB /* ASGradientLabel.m */; };
+		64947EF32100682700A15212 /* ASGradientLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64947EF22100682700A15212 /* ASGradientLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		64204EAB1FE8EC9000CBCEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64204EAD1FE8EC9000CBCEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64204EAE1FE8EC9000CBCEBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		64204EB61FE8ECC600CBCEBB /* ASGradientLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ASGradientLabel.h; path = ../../../../ASGradientLabel/ASGradientLabelDemo/ASGradientLabelDemo/ASGradientLabel/ASGradientLabel.h; sourceTree = "<group>"; };
-		64204EB71FE8ECC600CBCEBB /* ASGradientLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ASGradientLabel.m; path = ../../../../ASGradientLabel/ASGradientLabelDemo/ASGradientLabelDemo/ASGradientLabel/ASGradientLabel.m; sourceTree = "<group>"; };
+		64947EF12100682700A15212 /* ASGradientLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASGradientLabel.h; path = ../../ASGradientLabel/ASGradientLabel.h; sourceTree = "<group>"; };
+		64947EF22100682700A15212 /* ASGradientLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASGradientLabel.m; path = ../../ASGradientLabel/ASGradientLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,8 @@
 		64204E9E1FE8EC9000CBCEBB /* ASGradientLabelDemo */ = {
 			isa = PBXGroup;
 			children = (
-				64204EB51FE8ECA300CBCEBB /* ASGradientLabel */,
+				64947EF12100682700A15212 /* ASGradientLabel.h */,
+				64947EF22100682700A15212 /* ASGradientLabel.m */,
 				64204E9F1FE8EC9000CBCEBB /* AppDelegate.h */,
 				64204EA01FE8EC9000CBCEBB /* AppDelegate.m */,
 				64204EA21FE8EC9000CBCEBB /* ViewController.h */,
@@ -73,15 +74,6 @@
 				64204EAE1FE8EC9000CBCEBB /* main.m */,
 			);
 			path = ASGradientLabelDemo;
-			sourceTree = "<group>";
-		};
-		64204EB51FE8ECA300CBCEBB /* ASGradientLabel */ = {
-			isa = PBXGroup;
-			children = (
-				64204EB61FE8ECC600CBCEBB /* ASGradientLabel.h */,
-				64204EB71FE8ECC600CBCEBB /* ASGradientLabel.m */,
-			);
-			path = ASGradientLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +149,7 @@
 			files = (
 				64204EA41FE8EC9000CBCEBB /* ViewController.m in Sources */,
 				64204EAF1FE8EC9000CBCEBB /* main.m in Sources */,
-				64204EB81FE8ECC600CBCEBB /* ASGradientLabel.m in Sources */,
+				64947EF32100682700A15212 /* ASGradientLabel.m in Sources */,
 				64204EA11FE8EC9000CBCEBB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
