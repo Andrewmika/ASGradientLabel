@@ -3,6 +3,15 @@
 [![License](https://img.shields.io/cocoapods/l/ASGradientLabel.svg?style=flat)](https://cocoapods.org/pods/ASGradientLabel)
 [![Platform](https://img.shields.io/cocoapods/p/ASGradientLabel.svg?style=flat)](https://cocoapods.org/pods/ASGradientLabel)
 
+## Installation
+
+ASGradientLabel is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'ASGradientLabel'
+```
+
 ## 文字渐变Label
 由于项目原因需要使用文字渐变，虽然可以使用`CAGradientLayer`来实现，但是由于项目为自动布局使用起来会比较麻烦，因此采取重写`drawRect`的方法。
 
