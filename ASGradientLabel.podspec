@@ -10,12 +10,12 @@ Pod::Spec.new do |s|
 
 
   s.name         = "ASGradientLabel"
-  s.version      = "0.0.1"
-  s.summary      = "文字渐变Label"
+  s.version      = "1.0.0"
+  s.summary      = "Gradient Label"
 
   
   s.description  = <<-DESC
-  文字渐变的label，支持text和attributeText
+  support text And attributeText content
                    DESC
 
   s.homepage     = "https://github.com/Andrewmika/ASGradientLabel"

@@ -34,7 +34,7 @@
     self.attributedLabel.locations = @[@0 ,@1];
     self.attributedLabel.startPoint = CGPointMake(0, 0);
     self.attributedLabel.endPoint = CGPointMake(1, 1);
-    NSMutableAttributedString *attr = [[NSMutableAttributedString alloc] initWithString:@"我是AttributedString"];
+    NSMutableAttributedString *attr = [[NSMutableAttributedString alloc] initWithString:@"I`m AttributedString"];
     [attr addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:30] range:NSMakeRange(2, attr.length - 2)];
     self.attributedLabel.attributedText = attr;
 }

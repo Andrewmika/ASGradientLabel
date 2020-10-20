@@ -14,7 +14,6 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
 
     CGSize textSize = [self.text sizeWithAttributes:@{NSFontAttributeName : self.font}];
-    
     if (self.attributedText.length > 0) {
         [self.attributedText drawWithRect:rect options:NSStringDrawingUsesLineFragmentOrigin context:NULL];
     }
@@ -22,7 +21,6 @@
         [self.textColor set];
         [self.text drawWithRect:rect options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.font} context:NULL];
     }
-    
     CGImageRef mask = CGBitmapContextCreateImage(context);
     CGContextClearRect(context, rect);
     CGFloat kHeight = (rect.size.height + textSize.height) * 0.5;
@@ -35,14 +33,14 @@
         temp[i] = self.locations[i].floatValue;
     }
     
-    // 绘制渐变色
+    // Draw gradient color
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)self.colors, temp);
     CGPoint startPoint = CGPointMake((-rect.origin.x + rect.size.width) * self.startPoint.x,(-rect.origin.y + kHeight) * (1 - self.startPoint.y));
     CGPoint endPoint = CGPointMake((-rect.origin.x + rect.size.width) * self.endPoint.x,(-rect.origin.y +  kHeight) *  (1 - self.endPoint.y));
     CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, kCGGradientDrawsBeforeStartLocation | kCGGradientDrawsAfterEndLocation);
     
-    // 释放内存
+    // free
     CGColorSpaceRelease(colorSpace);
     CGGradientRelease(gradient);
     CFRelease(mask);
